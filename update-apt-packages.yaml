@@ -1,5 +1,8 @@
 ---
 - hosts: all
+  vars:
+    desired_port: 77
+    default_port: 22
 
   become: true
   tasks:
