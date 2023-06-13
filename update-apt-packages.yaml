@@ -1,8 +1,5 @@
 ---
-- hosts: all
-  vars:
-    desired_port: 77
-    default_port: 22
+- hosts: apt
 
   become: true
   tasks:
