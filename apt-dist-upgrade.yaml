@@ -1,8 +1,0 @@
----
-- hosts: apt
-
-  become: true
-  tasks:
-    - name: dist-upgrade apt
-      apt:
-        upgrade: dist
