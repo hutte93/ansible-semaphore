@@ -8,10 +8,3 @@
 
 - hosts: pihole
   tasks:
-
-  - name: modify temperatur sensor input for pihole
-    become: true
-    replace:
-      path: /var/www/html/admin/scripts/pi-hole/php/header_authenticated.php
-      regexp: 'hwmon0'
-      replace: "hwmon1"
